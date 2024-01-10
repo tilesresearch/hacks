@@ -1,0 +1,17 @@
+[package]
+name = "rust-runtime"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+name = "rust_runtime_lib"
+path = "src/lib.rs"
+
+[[bin]]
+name = "rust-runtime-sys"
+path = "src/main.rs"
+
+[dependencies]
+wasm-bridge = { version = "0.3.0" }
+wasm-bindgen = { version = "0.2.89" }
