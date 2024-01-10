@@ -1,0 +1,15 @@
+cargo-features = ["per-package-target"]
+
+[package]
+name = "add_numbers"
+version = "1.0.0"
+
+forced-target = "wasm32-unknown-unknown"
+
+[lib]
+crate-type = ["cdylib"]
+
+
+[dependencies]
+wasm_component_layer = "0.1.0"
+wasm_runtime_layer = { version = "0.1.1", features = [ "backend_wasmtime" ] }

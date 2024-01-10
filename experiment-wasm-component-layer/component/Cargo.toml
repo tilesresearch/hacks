@@ -1,0 +1,11 @@
+[package]
+name = "rust-runtime"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+wasm_component_layer = "0.1.0"
+wasm_runtime_layer = { version = "0.2.0", features = [ "backend_wasmtime" ] }

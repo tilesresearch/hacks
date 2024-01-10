@@ -1,0 +1,5 @@
+package test:guest
+interface add
+{
+func add(x: i32, y: i32) -> i32;
+}
