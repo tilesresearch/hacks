@@ -13,16 +13,13 @@ wgpu = "0.18"
 env_logger = "0.10"
 log = "0.4"
 pollster = "0.2.5"
-# futures-intrusive = "0.4"
 futures = "0.3"
 bytemuck = { version = "1.12.1", features = ["derive"] }
-cfg-if = "1"
-# the other regular dependencies...
 
+cfg-if = "1"
 [target.'cfg(target_arch = "wasm32")'.dependencies]
 console_error_panic_hook = "0.1.6"
 console_log = "1.0"
-wgpu = { version = "0.18", features = ["webgl"]}
 wasm-bindgen = "0.2"
 wasm-bindgen-futures = "0.4.30"
 web-sys = { version = "0.3", features = [

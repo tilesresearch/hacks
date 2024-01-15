@@ -1,22 +1,27 @@
-// #[cfg(target_arch="wasm32")]
-// use wasm_bindgen::prelude::*;
+#[cfg(target_arch="wasm32")]
+use wasm_bindgen::prelude::*;
+
 use std::time::Instant;
 
 use wgpu::util::DeviceExt;
 
-#[cfg_attr(target_arch="wasm32", wasm_bindgen(start))]
-pub async fn run() {
+pub async fn create_device_and_queue() -> (wgpu::Device, wgpu::Queue) {
     let instance = wgpu::Instance::new(wgpu::InstanceDescriptor {
         backends: wgpu::Backends::all(), ..Default::default()
     });
     let adapter = instance.request_adapter(&Default::default()).await.unwrap();
     let features = adapter.features();
-    let (device, queue) = adapter.request_device(&wgpu::DeviceDescriptor {
+    adapter.request_device(&wgpu::DeviceDescriptor {
         label: None,
         features: features,
         limits: Default::default()
-    }, None).await.unwrap();
+    }, None).await.unwrap()
 
+}
+
+/// run simple addition with values in GPU memory
+#[cfg_attr(target_arch="wasm32", wasm_bindgen(start))]
+pub async fn run_simple_add(device: wgpu::Device, queue: wgpu::Queue) -> Vec<f32>{
     let start_instant = Instant::now();
 
     let cs_module = device.create_shader_module(wgpu::ShaderModuleDescriptor {
@@ -105,5 +110,5 @@ pub async fn run() {
     let data_raw = &buf_slice.get_mapped_range();
     let data: &[f32] = bytemuck::cast_slice(data_raw);
 
-    println!("#{:?}", data);
+    data.to_vec()
 }
