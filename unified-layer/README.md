@@ -4,13 +4,15 @@
 
 ## Usage
 
+Run all the commands from the root unified-layer directory.
+
 Install Rust:
 
 ```
 $ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
 
-Install Rust nightly
+Install Rust nightly:
 
 ```
 $ rustup toolchain install nightly
@@ -22,7 +24,7 @@ Install wasm-tools:
 $ cargo install wasm-tools
 ```
 
-Install wasm-pack
+Install wasm-pack:
 
 ```
 $ curl https://rustwasm.github.io/wasm-pack/installer/init.sh -sSf | sh
