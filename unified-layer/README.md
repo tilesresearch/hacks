@@ -26,6 +26,6 @@ Run the project:
 
 `$ rustup override set nightly && cd single_component && rustup target add wasm32-unknown-unknown && \
 cargo build && \
-chmod +x build.sh && \
+chmod +x build.sh && \ ./build.sh
 cd ../wasm-layer && \
 cargo run`
