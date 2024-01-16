@@ -9,6 +9,14 @@ Install Rust:
 `$ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 `
 
+Install Rust nightly
+
+`$ rustup toolchain install nightly`
+
+Add wasm32-unknown-unknown target
+
+`$ rustup target add wasm32-unknown-unknown`
+
 Install wasm-tools:
 
 `$ cargo install wasm-tools`
@@ -20,7 +28,7 @@ Install wasm-pack
 
 Run the project:
 
-`$ cd single_component && \
+`$ rustup override set nightly && cd single_component && \
 cargo build && \
 chmod +x build.sh && \
 cd ../wasm-layer && \
