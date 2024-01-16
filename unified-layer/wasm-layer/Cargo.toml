@@ -1,0 +1,11 @@
+[package]
+name = "wasm-layer"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+wasm_component_layer = "0.1.15"
+wasmi = "0.31.1"
+wasm_runtime_layer = { version = "0.2.0", features = [ "backend_wasmi" ] }
