@@ -9,13 +9,14 @@ Install Rust:
 `$ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 `
 
-Install wasm32-unknown-unknown target:
-
-`$ rustup target add wasm32-unknown-unknown`
-
-Install wasm tools:
+Install wasm-tools:
 
 `$ cargo install wasm-tools`
+
+Install wasm-pack
+
+`$ curl https://rustwasm.github.io/wasm-pack/installer/init.sh -sSf | sh
+`
 
 Run the project:
 
