@@ -13,10 +13,6 @@ Install Rust nightly
 
 `$ rustup toolchain install nightly`
 
-Add wasm32-unknown-unknown target
-
-`$ rustup target add wasm32-unknown-unknown`
-
 Install wasm-tools:
 
 `$ cargo install wasm-tools`
@@ -28,7 +24,7 @@ Install wasm-pack
 
 Run the project:
 
-`$ rustup override set nightly && cd single_component && \
+`$ rustup override set nightly && cd single_component && rustup target add wasm32-unknown-unknown && \
 cargo build && \
 chmod +x build.sh && \
 cd ../wasm-layer && \
