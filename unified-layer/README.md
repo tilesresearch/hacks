@@ -30,15 +30,20 @@ Install wasm-pack:
 $ curl https://rustwasm.github.io/wasm-pack/installer/init.sh -sSf | sh
 ```
 
-Run the project:
+Run the project:./build.sh
 
 ```
-$ rustup override set nightly && \
-cd single_component && \
+$ cd single_component && \
 rustup target add wasm32-unknown-unknown && \
 cargo build && \
 chmod +x build.sh && \
 ./build.sh && \
 cd ../wasm-layer && \
 cargo run
+```
+
+## For building component with cargo-component
+
+```
+$ cargo install cargo-component
 ```
