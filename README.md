@@ -3,15 +3,22 @@
 
 This repository serves as a playground for these technologies and is intended for learning and exploration purposes.
 
-## Hacks
 
-- [ ]  Backend agnostic host layer for WASM/WebGPU with feature detection and Web Workers module distribution
-- [ ]  Data model based on ECS and memory model based on Arrow
-- [ ]  Store Arrow dataframes on GPU
-- [ ]  APIs for CPU and GPU compute on the guest side
-- [ ]  Implement WebTransport based diff streaming
-- [ ]  Implement virtual filesystem layer with OPFS and WASI
-- [ ]  Stick in WASM/WebGPU devtools
+Experiments across:
+
+- internal dev tool
+- user facing CLI
+- core engine
+- shell
+
+### TODOs
+- [ ]  Backend agnostic host layer for WASM/WebGPU with feature detection
+- [ ]  Arrow2 dataframes on gpu with ECS API
 - [ ]  Build dataloader abstraction
-- [ ]  Package in cli/shell with shareable URLs for kernels
+- [ ]  Compute APIs for CPU and GPU
+- [ ]  Implement WebTransport based P2P streaming
+- [ ]  Stick in WASM/WebGPU devtools
+- [ ]  Package in CLI/shell with shareable URLs for kernels
 - [ ]  Some compute kernels to showcase steaming compute
+- [ ]  OPFS/WASI based VFS implementation
+
