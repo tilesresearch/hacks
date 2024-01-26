@@ -12,10 +12,10 @@ Install Rust:
 $ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
 
-Install Rust nightly:
+Install and set Rust nightly:
 
 ```
-$ rustup toolchain install nightly
+$ rustup toolchain install nightly && rustup override set nightly
 ```
 
 Install wasm-tools:
@@ -30,7 +30,7 @@ Install wasm-pack:
 $ curl https://rustwasm.github.io/wasm-pack/installer/init.sh -sSf | sh
 ```
 
-Run the project:./build.sh
+Run the project:
 
 ```
 $ cd single_component && \
