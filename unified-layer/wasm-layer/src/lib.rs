@@ -1,12 +1,12 @@
 use wasm_component_layer::* ;
-
+use wasm_runtime_layer::web ;
 // The bytes of the component.
 const WASM: &[u8] = include_bytes!("../../component.wasm");
 
 pub fn run() {
     // Create a new engine for instantiating a component.
-    let engine = Engine::new(wasmtime::Engine::default());
-
+    let engine = Engine::new(web::Engine::default());
+    // TODO: Use tracing to output with console
     // Create a store for managing WASM data and any custom user-defined state.
     let mut store = Store::new(&engine, ());
 

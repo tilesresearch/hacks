@@ -39,7 +39,7 @@ cargo build && \
 chmod +x build.sh && \
 ./build.sh && \
 cd ../wasm-layer && \
-cargo run
+cargo run --target wasm32-unknown-unknown
 ```
 
 ## For building component with cargo-component

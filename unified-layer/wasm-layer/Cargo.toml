@@ -7,6 +7,4 @@ edition = "2021"
 
 [dependencies]
 wasm_component_layer = "0.1.15"
-wasmtime = { version = "17.0.0", features = ["component-model"] }
-wasmtime-environ = { version = "17.0.0", features = ["component-model"] }
-wasm_runtime_layer = { version = "0.2.0", features = [ "backend_wasmtime" ] }
+wasm_runtime_layer = { version = "0.2.0", features = [ "backend_web", "tracing"] }
