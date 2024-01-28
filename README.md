@@ -13,11 +13,11 @@ This repository serves as a tinkering playground and is intended for learning an
 # Active
 
 - extism-layer
-- rust-gpu
+- rust-gpu-setup
 - wgpu-layer
-- webgpu-computes
+- webgpu-computes-starter
 - wt-p2p
-- cli-rayon
+- cli-base
 
 # Concluded
 
