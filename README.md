@@ -1,6 +1,9 @@
 
 # Tilekit Hacks
 
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/tilekit/hacks?quickstart=1)
+
+
 This repository serves as a tinkering playground and is intended for learning and exploration purposes.
 
 # Ways
