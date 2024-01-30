@@ -4,7 +4,7 @@
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/tilekit/hacks?quickstart=1)
 
 
-This repository serves as a tinkering playground and is intended for learning and exploration purposes.
+This repository serves as a tinkering playground and is intended for learning and exploration purposes. Goal is to try lots of things, see what works out, and then gradually improve bit by bit from there.
 
 ## Ways
 
