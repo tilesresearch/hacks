@@ -4,7 +4,7 @@
 
 ## TODO
 
-- [ ] Wrap extism host and guest packages with tilekit with cargo subcommands
+- [ ] Wrap extism host and guest packages with tilekit cargo subcommands
 
 ---
 
