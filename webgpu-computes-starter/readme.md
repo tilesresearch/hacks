@@ -1,6 +1,6 @@
-## webgpu-computes
+## webgpu-computes-starter
 
-> Experiments on webgpu compute shaders
+> Experiments on WebGPU compute shaders.
 
 ## Running
 
