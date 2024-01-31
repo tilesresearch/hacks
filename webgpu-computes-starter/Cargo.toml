@@ -1,5 +1,5 @@
 [package]
-name = "webgpu_computes_starter"
+name = "webgpu-computes-starter"
 version = "0.1.0"
 edition = "2021"
 

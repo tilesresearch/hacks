@@ -1,5 +1,5 @@
 use webgpu_computes_starter::*;
-// use webgpu-computes-starter::create_device_and_queue;
+// use webgpu_computes_starter::create_device_and_queue;
 
 fn main() {
     let (device, queue) = pollster::block_on(create_device_and_queue());
