@@ -15,15 +15,15 @@ This repository serves as a tinkering playground and is intended for learning an
 
 - wasm-layer
 - wgpu-layer
+- wt-layer
 - cli-base
+- rust-gpu-setup
 - webgpu-computes-starter
 
 
 ## Proposed
 
-- wt-layer
-- rust-gpu-setup
-- wt-libp2p
+- wt-libp2p: Waiting for QUIC P2P draft to get implemented.
 
 ## Concluded
 
