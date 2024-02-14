@@ -14,15 +14,16 @@ This repository serves as a tinkering playground and is intended for learning an
 ## Active
 
 - wasm-layer
-- wgpu-layer
-- wt-layer
+- fp-bindgen
 - cli-base
 - rust-gpu-setup
 - webgpu-computes-starter
-
+- xterm-shell
 
 ## Proposed
 
+- wgpu-extension
+- wt-extension
 - wt-libp2p: Waiting for QUIC P2P draft to get implemented.
 
 ## Concluded
