@@ -15,6 +15,7 @@ This repository serves as a tinkering playground and is intended for learning an
 
 - wasm-layer
 - fp-bindgen
+- extensions-setup
 - cli-base
 - rust-gpu-setup
 - webgpu-computes-starter
