@@ -7,11 +7,6 @@
 
 This repository serves as a tinkering playground and is intended for learning and exploration purposes. Goal is to try lots of things, see what works out, and then gradually improve bit by bit from there.
 
-## Ways
-
-- Each folder should have a specific tinkering task with a corresponding descriptive name.
-- It is an individual hacker's responsibility to include easy to follow setup instructions in the README for an out-of-the-box tinkering experience.
-
 ## Proposed
 
 - linker
